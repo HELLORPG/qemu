@@ -1181,6 +1181,7 @@ S: Supported
 F: hw/s390x/ipl.*
 F: pc-bios/s390-ccw/
 F: pc-bios/s390-ccw.img
+F: docs/devel/s390-dasd-ipl.txt
 T: git https://github.com/borntraeger/qemu.git s390-next
 L: qemu-s390x@nongnu.org
 
@@ -1445,6 +1446,7 @@ S: Supported
 F: hw/vfio/ccw.c
 F: hw/s390x/s390-ccw.c
 F: include/hw/s390x/s390-ccw.h
+F: include/hw/s390x/vfio-ccw.h
 T: git https://github.com/cohuck/qemu.git s390-next
 L: qemu-s390x@nongnu.org
 
@@ -1895,6 +1897,8 @@ F: hmp.[ch]
 F: hmp-commands*.hx
 F: include/monitor/hmp-target.h
 F: tests/test-hmp.c
+F: include/qemu/qemu-print.h
+F: util/qemu-print.c
 
 Network device backends
 M: Jason Wang <jasowang@redhat.com>
@@ -2221,6 +2225,18 @@ F: include/hw/i2c/i2c.h
 F: include/hw/i2c/smbus_master.h
 F: include/hw/i2c/smbus_slave.h
 F: include/hw/i2c/smbus_eeprom.h
+
+EDK2 Firmware
+M: Laszlo Ersek <lersek@redhat.com>
+M: Philippe Mathieu-Daudé <philmd@redhat.com>
+S: Supported
+F: pc-bios/descriptors/??-edk2-*.json
+F: pc-bios/edk2-*
+F: roms/Makefile.edk2
+F: roms/edk2
+F: roms/edk2-*
+F: tests/data/uefi-boot-images/
+F: tests/uefi-test-tools/
 
 Usermode Emulation
 ------------------
